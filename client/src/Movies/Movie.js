@@ -7,8 +7,6 @@ const Movie = (props) => {
  
   useEffect(() => {
     const id = props.match.params.id;
-    console.log(id);
-    console.log(typeof id);
     // change ^^^ that line and grab the id from the URL
     // You will NEED to add a dependency array to this effect hook
 
@@ -36,7 +34,7 @@ const Movie = (props) => {
   return (
     <div className="save-wrapper">
       <MovieCard movie={movie}/>
-      <div className="save-button">Save</div>
+      <div className="save-button" onClick={saveMovie}>Save</div>
     </div>
   );
 }

@@ -9,9 +9,9 @@ const SavedList = props => (
         <span className="saved-movie">{movie.title}</span>
       </NavLink>
     ))}
-    <Link to='/'>
-      <div className="home-button">Home</div>
-    </Link>
+    {/* <Link to='/'> */}
+      <div className="home-button" onClick={() => props.history.push('/')}>Home</div>
+    {/* </Link> */}
   </div>
 );
 
